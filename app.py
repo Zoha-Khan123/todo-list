@@ -14,6 +14,7 @@ click = st.button("Add Task")
 
 # Button to add a task
 if click:
+    if task:
         st.session_state["tasks"].append(task)
         st.rerun()
 
